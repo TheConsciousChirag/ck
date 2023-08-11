@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<style>
+    * {box-sizing: border-box}
+    body {
+      font-family: Verdana, sans-serif; 
+      margin:0;
+      background-color: rgb(74, 173, 90);
+      
+      background-color: #ffffff;
+    }
+    
+    #temp{
+      position: fixed;
+      left: 14%;
+      width: 74%;
+      height:18cm;
+      top: 6%;
+    }
+    
+    /* Slideshow container */
+    img{
+        opacity:inherit;
+    }
+    .slideshow-container {
+      /*border: 14px groove rgb(7, 214, 52);*/
+      background-image: ;
+      border-color: #dd2209;
+      top:19%;
+      bottom: 3%;
+      width: 27%;
+        height: 15cm;
+        position: fixed;
+        left: 37%;
+      background: #ffffff;
+      border-radius: 6px;
+      margin: 80% red;
+      border-color: rgb(15, 184, 128);
+      
+    }
+    
+    /* Slides */
+    .mySlides {
+      display: none;
+      padding: 80px;
+      text-align: center;
+      border-style: double red;
+    }
+    
+    /* Next & previous buttons */
+    .prev, .next {
+      cursor: pointer;
+      position: absolute;
+      top: 50%;
+      width: auto;
+      margin-top: -30px;
+      padding: 16px;
+      color: #dd2209;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      border: 2px solid #888;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      position: absolute;
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover, .next:hover {
+      background-color: rgba(0,0,0,0.8);
+      color: white;
+    }
+    
+    /* The dot/bullet/indicator container */
+    .dot-container {
+        text-align: center;
+        padding: 20px;
+        background: #fcfafa;
+    }
+    
+    /* The dots/bullets/indicators */
+    .dot {
+      cursor: pointer;
+      height: 15px;
+      width: 15px;
+      margin: 0 2px;
+      background-color: #9fa0a1;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.6s ease;
+    }
+    
+    .dot:hover{
+      top: 15%;
+      color: #dd2209;
+    }
+
+    /* Add a background color to the active dot/circle */
+    .active, .dot:hover {
+      background-color: #df3d0c;
+    }
+    
+    /* Add an italic font style to all quotes */
+    q {font-style: italic;}
+    
+    /* Add a blue color to the author */
+    .author {color: cornflowerblue;}
+    
+    /* Add a stylish border to the next and prev buttons */
+    .prev, .next {
+      border: 2px solid #337ab7;
+    }
+
+   
+  .icon-bar a {
+    border-radius: 10px;
+    
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    font-family:Arial, Helvetica, sans-serif;
+    width: auto%; /* Equal width (5 icons with 20% width each = 100%) */
+    background-color: #ffffff;
+    
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease; /* Add transition for hover effects */
+    color: rgb(72, 233, 9); /* White text color */
+    font-size: 23px; /* Increased font size */
+    
+  }
+
+    </style>
+</head>
+<body>
+
+
+  <img src="https://media.istockphoto.com/id/1161116588/photo/mobile-phone-top-view-with-white-screen.jpg?s=612x612&w=0&k=20&c=6nGTbnTvQUiq2XXSYuT411pC-5B1SUjhpLhE3eGrNIw=" alt="CK" id="temp">
+
+<div class="slideshow-container" >
+  <div class="icon-bar">
+    <a href="index.html"><i class="fa fa-home"> Home</i></a> 
+  </div>
+
+  <div class="mySlides">
+    <q>Nobody Can Bring Inner Harm To you<br>Without Your Consent</q>
+    <p class="author">- Chirag Kaushik</p>
+  </div>
+
+<div class="mySlides">
+  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+  <p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+  <p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+  <p class="author">- Thomas A. Edison</p>
+</div>
+
+<div class="mySlides">
+  <q> Harm To you<br>Without Your Consent</q>
+  <p class="author">- Chirag Kaushik</p>
+</div>
+
+<div class="mySlides">
+<q>ck2 you had liked me for my own sake and for nothing else</q>
+<p class="author">- John Keats</p>
+</div>
+
+<div class="mySlides">
+<q>ck3 But man is not made for defeat. A man can be destroyed but not defeated.</q>
+<p class="author">- Ernest Hemingway</p>
+</div>
+
+<div class="mySlides">
+<q>ck4 I have not failed. I've just found 10,000 ways that won't work.</q>
+<p class="author">- Thomas A. Edison</p>
+</div>
+
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+
+</div>
+
+
+<div class="dot-container">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+</body>
+</html> 

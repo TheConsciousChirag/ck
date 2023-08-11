@@ -1,0 +1,87 @@
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #ec5a05; /* Dark-grey background */
+    overflow:auto; 
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 15%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 23px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #cfbfbf; /* Add a hover color */
+}
+
+.active {
+    background-color: #ccc; /* Make the active tab gray */
+    color: #999; /* Make the text gray */
+    border-radius: 0; /* Remove the border radius */
+    font-size: 18px; /* Reduce the font size */
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+.icon-bar a.active {
+    background-color: #ccc; /* Make the active tab gray */
+    color: #999; /* Make the text gray */
+    border-radius: 0; /* Remove the border radius */
+    font-size: 18px; /* Reduce the font size */
+}
+
+/* Style the button that is used to open and close the collapsible content */
+.collapsible {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+  }
+  
+  /* Add a background color to the button if it is clicked on (add the .active class with JS), and when you move the mouse over it (hover) */
+  .active, .collapsible:hover {
+    background-color: #ccc;
+  }
+  
+  /* Style the collapsible content. Note: hidden by default */
+  .content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+  }
+
+  /*Dark Theme*/
+  body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+  button
+  {
+    background-color: aquamarine;
+    padding: 10px;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: fit-content;
+    width: fit-content;
+    border-radius: 70%;
+    border-color: blue;
+    border
+  }
