@@ -1,0 +1,118 @@
+/*Dark Theme*/
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+.icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #ec5a05; /* Dark-grey background */
+    overflow:auto; 
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 15%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 23px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #cfbfbf; /* Add a hover color */
+}
+
+.active {
+    background-color: #ccc; /* Make the active tab gray */
+    color: #999; /* Make the text gray */
+    border-radius: 0; /* Remove the border radius */
+    font-size: 18px; /* Reduce the font size */
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+.icon-bar a.active {
+    background-color: #ccc; /* Make the active tab gray */
+    color: #999; /* Make the text gray */
+    border-radius: 0; /* Remove the border radius */
+    font-size: 18px; /* Reduce the font size */
+}
+
+
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.gallery {
+    text-align: center;
+    padding: 20px;
+}
+
+.view-buttons button {
+    margin: 10px;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.images-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+
+.images-grid img {
+    width: 100%;
+    height: auto;
+}
+
+.slider-container {
+    overflow: hidden;
+    width: 100%;
+    position: relative;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+
+}
+
+.slider img {
+    width: 100%;
+    height: auto;
+}
+
+.prev-button{
+    top: 50%;
+    top: 80%;
+    right: 10%;
+    width: 70px;
+    height: 55px;
+    background-color: rgb(83, 129, 182);
+    border-radius: 50%;
+    
+}
+
+
+.next-button{
+    top: 80%;
+    left: 10%;
+    width: 70px;
+    height: 55px;
+    background-color: rgb(83, 129, 182);
+    border-radius: 50%;
+
+    
+}

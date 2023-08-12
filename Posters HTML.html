@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Posters CSS.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+     <!--Icon Bar-->
+     <div class="icon-bar">
+        <a href="index.html"><i class="fa fa-home"> Home</i></a> 
+        <a href="Video Series HTML.html"><i class="fa fa-play"> Video Series</i></a> 
+        <a href="Library  HTML.html"><i class="fa fa-book"> Library</i></a>
+        <a href="Posters HTML.html"><i class="fa fa-image"> Posters</i></a>
+        <a href="Quotes HTML.html"><i class="fa fa-quote-left"> Quotes<i class="fa fa-quote-right"></i></i></a> 
+        <i class="themeSwitch""><button onclick="myFunction()">Theme</button></i>
+    </div>
+    <div class="gallery">
+        <div class="view-buttons">
+            <button id="gridView">Grid View</button>
+            <button id="sliderView">Slider View</button>
+        </div>
+        <div class="images-grid">
+            <!-- Images will be displayed here in grid view -->
+            <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg" alt="Image 1">
+            <img src="https://img.freepik.com/free-photo/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest_181624-5840.jpg?size=626&ext=jpg" alt="Image 2">
+            <img src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?size=626&ext=jpg" alt="Image 3">
+            <!-- Add more images as needed -->
+        </div>
+        <!-- ... (previous HTML code) ... -->
+
+        <!-- ... (previous HTML code) ... -->
+
+<div class="slider-container">
+    <div class="slider">
+        <!-- Images will be displayed here in slider view -->
+        <div class="slide">
+            <img src="https://img.freepik.com/free-photo/wide-angle-shot-single-tree-growing-clouded-sky-during-sunset-surrounded-by-grass_181624-22807.jpg?size=626&ext=jpg" alt="Image 1">
+            <button class="download-button" onclick="downloadImage('image1.jpg', 'Image 1')">Download</button>
+        </div>
+        <div class="slide">
+            <img src="https://img.freepik.com/free-photo/beautiful-wooden-pathway-going-breathtaking-colorful-trees-forest_181624-5840.jpg?size=626&ext=jpg" alt="Image 2">
+            <button class="download-button" onclick="downloadImage('image2.jpg', 'Image 2')">Download</button>
+        </div>
+        <div class="slide">
+            <img src="https://img.freepik.com/free-photo/beautiful-view-greenery-bridge-forest-perfect-background_181624-17827.jpg?size=626&ext=jpg" alt="Image 3">
+            <button class="download-button" onclick="downloadImage('image3.jpg', 'Image 3')">Download</button>
+        </div>
+        <!-- Add more images as needed -->
+    </div>
+    <button class="prev-button"><-Previous</button>
+    <button class="next-button">Next-></button>
+</div>
+
+<!-- ... (remaining HTML code) ... -->
+
+
+
+    </div>
+    <script src="Posters JavaScript.js"></script>
+</body>
+</html>

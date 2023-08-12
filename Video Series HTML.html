@@ -148,15 +148,71 @@ animation:svelte-f3f1iy-sk-bouncedelay 1.4s infinite ease-in-out both}
     
   }
 
+  .icon-bar {
+    width: 100%; /* Full-width */
+    background-color: #ec5a05; /* Dark-grey background */
+    overflow:auto; 
+}
+
+.icon-bar a {
+    float: left; /* Float links side by side */
+    text-align: center; /* Center-align text */
+    width: 15%; /* Equal width (5 icons with 20% width each = 100%) */
+    padding: 12px 0; /* Some top and bottom padding */
+    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease; /* Add transition for hover effects */
+    color: white; /* White text color */
+    font-size: 23px; /* Increased font size */
+}
+
+.icon-bar a:hover {
+    background-color: #cfbfbf; /* Add a hover color */
+}
+
+.active {
+    background-color: #ccc; /* Make the active tab gray */
+    color: #999; /* Make the text gray */
+    border-radius: 0; /* Remove the border radius */
+    font-size: 18px; /* Reduce the font size */
+}
+
+.container {
+    display: inline-block;
+    cursor: pointer;
+}
+.icon-bar a.active {
+    background-color: #ccc; /* Make the active tab gray */
+    color: #999; /* Make the text gray */
+    border-radius: 0; /* Remove the border radius */
+    font-size: 18px; /* Reduce the font size */
+}
+/*Dark Theme*/
+body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
   </style>
     
      </head>
 
 <body>
 
-    <div class="icon-barx">
-        <a href="index.html"><i class="fa fa-home"> Home</i></a> 
-      </div>
+    <!--Icon Bar-->
+   <div class="icon-bar">
+    <a href="index.html"><i class="fa fa-home"> Home</i></a> 
+    <a href="Video Series HTML.html"><i class="fa fa-play"> Video Series</i></a> 
+    <a href="Library  HTML.html"><i class="fa fa-book"> Library</i></a>
+    <a href="Posters HTML.html"><i class="fa fa-image"> Posters</i></a>
+    <a href="Quotes HTML.html"><i class="fa fa-quote-left"> Quotes<i class="fa fa-quote-right"></i></i></a> 
+    <i class="themeSwitch""><button onclick="myFunction()">Theme</button></i>
+</div>
     
 		<div class="mt-7 px-0 tab:mt-15 tab:px-12 laptop:mt-12"><div class="px-2 laptop:hidden">
 			<div class="w-full"><div slot="main"><button class="relative mb-4 flex h-[50px] w-full items-center rounded-md border border-orange-600 hover:bg-brand-600" type="button"><img class="absolute inset-y-0 left-0 h-full w-[50px] rounded-l-md object-cover" src="https://cimg.acharyaprashant.org/images/img-65841b61-7440-40dd-93ce-6224c8440bb0/10/image.jpg" alt="Topic Face">
@@ -171,7 +227,7 @@ animation:svelte-f3f1iy-sk-bouncedelay 1.4s infinite ease-in-out both}
 
                 
 <span class="font-en">Vedant - Upanishad</span></div>
-				<div class="ml-2 text-slate-700"><svg xmlns="http://www.w3.org/2000/svg" width="8" height="5" viewBox="0 0 8 5" class="fill-current"><path fill="#334155" d="M4 0a.474.474 0 0 0-.19.038.537.537 0 0 0-.167.116L.14 3.74c-.093.09-.14.2-.14.332a.474.474 0 0 0 .815.338L4 1.152 7.186 4.41a.462.462 0 0 0 .337.144.485.485 0 0 0 .414-.236A.474.474 0 0 0 8 4.072a.444.444 0 0 0-.14-.332L4.357.154A.474.474 0 0 0 4 0Z"></path></svg></div></div></button></div></div>
+				<div class="ml-2 text-slate-700"><a href="https://youtube.com/" width="8" height="5" viewBox="0 0 8 5" class="fill-current"><path fill="#334155" d="M4 0a.474.474 0 0 0-.19.038.537.537 0 0 0-.167.116L.14 3.74c-.093.09-.14.2-.14.332a.474.474 0 0 0 .815.338L4 1.152 7.186 4.41a.462.462 0 0 0 .337.144.485.485 0 0 0 .414-.236A.474.474 0 0 0 8 4.072a.444.444 0 0 0-.14-.332L4.357.154A.474.474 0 0 0 4 0Z"></path></svg></div></div></button></div></div>
 <div class="w-full"><div slot="content"><div class="laptop:block"><div class="flex flex-wrap pb-4"><div class="w-1/2 items-stretch self-stretch pl-2 pr-2 laptop:w-1/4 desk:w-1/5 border-r-[0.5px] laptop:border-0"><button class="flex h-full w-full items-center justify-between" type="button"><div class="flex h-full w-full items-center justify-between rounded-sm p-1.5 pr-0 hover:bg-slate-100 tab:pr-4 laptop:hover:shadow-sm"><div class="text-left font-semibold text-slate-700  text-base laptop:text-lg">
 
 <span class="font-en">Ishavasya Upanishad</span></div>

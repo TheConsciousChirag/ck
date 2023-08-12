@@ -85,3 +85,14 @@
     border-color: blue;
     border
   }
+
+  .gita{
+    width: 30px;
+    height: 50px;
+  }
+  .gita img{
+    size: 44px;
+    width: 30px;
+    height: 30px;
+    background-color: #ec5a05;
+  }

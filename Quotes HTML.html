@@ -9,7 +9,6 @@
       font-family: Verdana, sans-serif; 
       margin:0;
       background-color: rgb(74, 173, 90);
-      
       background-color: #ffffff;
     }
     
@@ -20,7 +19,52 @@
       height:18cm;
       top: 6%;
     }
-    
+
+    /*Dark Theme*/
+  body {
+    padding: 25px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+  }
+  
+  .dark-mode {
+    background-color: black;
+    color: white;
+  }
+
+    /* Icon Bar */
+    .icon-bar {
+      border: dotted green;
+      position: fixed;
+      top: 6%;
+      left: 2%;
+      height: 85%; /* Adjusted height */
+      background-color: #ec5a05; /* Dark-grey background */
+      overflow:auto; 
+    }
+
+    .icon-bar a {
+      display: block; /* Display links as blocks */
+      text-align: center; /* Center-align text */
+      padding: 12px 0; /* Some top and bottom padding */
+      transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease; /* Add transition for hover effects */
+      color: white; /* White text color */
+      font-size: 18px; /* Adjusted font size */
+      text-decoration: none; /* Remove underline */
+    }
+
+    .icon-bar a:hover {
+      background-color: #cfbfbf; /* Add a hover color */
+    }
+
+    .active {
+      background-color: #ccc; /* Make the active tab gray */
+      color: #999; /* Make the text gray */
+      border-radius: 0; /* Remove the border radius */
+      font-size: 16px; /* Adjusted font size */
+    }
+
     /* Slideshow container */
     img{
         opacity:inherit;
@@ -32,16 +76,15 @@
       top:19%;
       bottom: 3%;
       width: 27%;
-        height: 15cm;
-        position: fixed;
-        left: 37%;
+      height: 15cm;
+      position: fixed;
+      left: 37%;
       background: #ffffff;
       border-radius: 6px;
       margin: 80% red;
       border-color: rgb(15, 184, 128);
-      
     }
-    
+
     /* Slides */
     .mySlides {
       display: none;
@@ -49,7 +92,7 @@
       text-align: center;
       border-style: double red;
     }
-    
+
     /* Next & previous buttons */
     .prev, .next {
       cursor: pointer;
@@ -65,27 +108,27 @@
       user-select: none;
       border: 2px solid #888;
     }
-    
+
     /* Position the "next button" to the right */
     .next {
       position: absolute;
       right: 0;
       border-radius: 3px 0 0 3px;
     }
-    
+
     /* On hover, add a black background color with a little bit see-through */
     .prev:hover, .next:hover {
       background-color: rgba(0,0,0,0.8);
       color: white;
     }
-    
+
     /* The dot/bullet/indicator container */
     .dot-container {
-        text-align: center;
-        padding: 20px;
-        background: #fcfafa;
+      text-align: center;
+      padding: 20px;
+      background: #fcfafa;
     }
-    
+
     /* The dots/bullets/indicators */
     .dot {
       cursor: pointer;
@@ -97,7 +140,7 @@
       display: inline-block;
       transition: background-color 0.6s ease;
     }
-    
+
     .dot:hover{
       top: 15%;
       color: #dd2209;
@@ -107,101 +150,83 @@
     .active, .dot:hover {
       background-color: #df3d0c;
     }
-    
+
     /* Add an italic font style to all quotes */
     q {font-style: italic;}
-    
+
     /* Add a blue color to the author */
     .author {color: cornflowerblue;}
-    
+
     /* Add a stylish border to the next and prev buttons */
     .prev, .next {
       border: 2px solid #337ab7;
     }
-
-   
-  .icon-bar a {
-    border-radius: 10px;
-    
-    float: left; /* Float links side by side */
-    text-align: center; /* Center-align text */
-    font-family:Arial, Helvetica, sans-serif;
-    width: auto%; /* Equal width (5 icons with 20% width each = 100%) */
-    background-color: #ffffff;
-    
-    transition:cubic-bezier(0.075, 0.82, 0.165, 1) 0.3s ease; /* Add transition for hover effects */
-    color: rgb(72, 233, 9); /* White text color */
-    font-size: 23px; /* Increased font size */
-    
-  }
-
-    </style>
+</style>
 </head>
 <body>
 
+  <!--Icon Bar-->
+  <div class="icon-bar">
+    <a href="index.html"><i class="fa fa-home"> Home</i></a> 
+    <a href="Video Series HTML.html"><i class="fa fa-play"> Video Series</i></a> 
+    <a href="Library  HTML.html"><i class="fa fa-book"> Library</i></a>
+    <a href="Posters HTML.html"><i class="fa fa-image"> Posters</i></a>
+    <a href="Quotes HTML.html"><i class="fa fa-quote-left"> Quotes<i class="fa fa-quote-right"></i></i></a> 
+    <i class="themeSwitch""><button onclick="myFunction()">Theme</button></i>
+</div>
 
   <img src="https://media.istockphoto.com/id/1161116588/photo/mobile-phone-top-view-with-white-screen.jpg?s=612x612&w=0&k=20&c=6nGTbnTvQUiq2XXSYuT411pC-5B1SUjhpLhE3eGrNIw=" alt="CK" id="temp">
 
-<div class="slideshow-container" >
-  <div class="icon-bar">
-    <a href="index.html"><i class="fa fa-home"> Home</i></a> 
-  </div>
-
+<div class="slideshow-container">
   <div class="mySlides">
     <q>Nobody Can Bring Inner Harm To you<br>Without Your Consent</q>
     <p class="author">- Chirag Kaushik</p>
   </div>
 
-<div class="mySlides">
-  <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
-  <p class="author">- John Keats</p>
+  <div class="mySlides">
+    <q>I love you the more in that I believe you had liked me for my own sake and for nothing else</q>
+    <p class="author">- John Keats</p>
+  </div>
+
+  <div class="mySlides">
+    <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
+    <p class="author">- Ernest Hemingway</p>
+  </div>
+
+  <div class="mySlides">
+    <q>I have not failed. I've just found 10,000 ways that won't work.</q>
+    <p class="author">- Thomas A. Edison</p>
+  </div>
+
+  <div class="mySlides">
+    <q> Harm To you<br>Without Your Consent</q>
+    <p class="author">- Chirag Kaushik</p>
+  </div>
+
+  <div class="mySlides">
+    <q>ck2 you had liked me for my own sake and for nothing else</q>
+    <p class="author">- John Keats</p>
+  </div>
+
+  <div class="mySlides">
+    <q>ck3 But man is not made for defeat. A man can be destroyed but not defeated.</q>
+    <p class="author">- Ernest Hemingway</p>
+  </div>
+
+  <div class="mySlides">
+    <q>ck4 I have not failed. I've just found 10,000 ways that won't work.</q>
+    <p class="author">- Thomas A. Edison</p>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
 </div>
-
-<div class="mySlides">
-  <q>But man is not made for defeat. A man can be destroyed but not defeated.</q>
-  <p class="author">- Ernest Hemingway</p>
-</div>
-
-<div class="mySlides">
-  <q>I have not failed. I've just found 10,000 ways that won't work.</q>
-  <p class="author">- Thomas A. Edison</p>
-</div>
-
-<div class="mySlides">
-  <q> Harm To you<br>Without Your Consent</q>
-  <p class="author">- Chirag Kaushik</p>
-</div>
-
-<div class="mySlides">
-<q>ck2 you had liked me for my own sake and for nothing else</q>
-<p class="author">- John Keats</p>
-</div>
-
-<div class="mySlides">
-<q>ck3 But man is not made for defeat. A man can be destroyed but not defeated.</q>
-<p class="author">- Ernest Hemingway</p>
-</div>
-
-<div class="mySlides">
-<q>ck4 I have not failed. I've just found 10,000 ways that won't work.</q>
-<p class="author">- Thomas A. Edison</p>
-</div>
-
-
-<a class="prev" onclick="plusSlides(-1)">❮</a>
-<a class="next" onclick="plusSlides(1)">❯</a>
-
-
-</div>
-
 
 <div class="dot-container">
   <span class="dot" onclick="currentSlide(1)"></span> 
   <span class="dot" onclick="currentSlide(2)"></span> 
   <span class="dot" onclick="currentSlide(3)"></span> 
 </div>
-
-
 
 <script>
 var slideIndex = 1;
@@ -233,4 +258,4 @@ function showSlides(n) {
 </script>
 
 </body>
-</html> 
+</html>
