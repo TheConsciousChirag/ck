@@ -3,7 +3,62 @@
         <title>The Conscious Chirag ORG</title>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
         <link rel="stylesheet" href="CK web CSS.css">
-        
+        <style>
+  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+  }
+  .container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .option-box {
+    background: #ffffff;
+    border: 1px solid #ccc;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 10px;
+    width: calc(45% - 20px);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  .option-box:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+  }
+  .option-box h2 {
+    margin-top: 0;
+    font-size: 24px;
+    color: #333;
+  }
+  .option {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .sub-option {
+    width: calc(20% - 20px);
+    margin: 5px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.2s, transform 0.2s;
+  }
+  .sub-option:hover {
+    background-color: #e5e5e5;
+    transform: translateY(-5px);
+  }
+</style>
+
        
     </head>
     <body>
@@ -21,6 +76,39 @@
                 <img src="https://c4.wallpaperflare.com/wallpaper/562/460/955/god-lord-krishna-wallpaper-preview.jpg" alt="Gita">
                 <a href="#"> Gita</i></a>
         </div>
+
+        <div class="container">
+  <div class="option-box">
+    <h2>Option A</h2>
+    <div class="option" id="optionA">
+      <!-- JavaScript will populate this section -->
+    </div>
+  </div>
+  <div class="option-box">
+    <h2>Option B</h2>
+    <div class="option" id="optionB">
+      <!-- JavaScript will populate this section -->
+    </div>
+  </div>
+  <div class="option-box">
+    <h2>Option C</h2>
+    <div class="option" id="optionC">
+      <!-- JavaScript will populate this section -->
+    </div>
+  </div>
+  <div class="option-box">
+    <h2>Option D</h2>
+    <div class="option" id="optionD">
+      <!-- JavaScript will populate this section -->
+    </div>
+  </div>
+  <div class="option-box">
+    <h2>Option E</h2>
+    <div class="option" id="optionE">
+      <!-- JavaScript will populate this section -->
+    </div>
+  </div>
+</div>
         
         <script src="CK web JS.js"></script>
         <!--dark theme-->
@@ -30,5 +118,32 @@
                element.classList.toggle("dark-mode");
             }
             </script>
+
+        <script>
+  const optionsData = [
+    ["Link_A1", "Link_A2", "Link_A3", "Link_A4", "Link_A5", "Link_A6", "Link_A7", "Link_A8", "Link_A9", "Link_A10", "Link_A11", "Link_A12", "Link_A13", "Link_A14", "Link_A15"],
+    ["Link_B1", "Link_B2", "Link_B3", "Link_B4", "Link_B5", "Link_B6", "Link_B7", "Link_B8", "Link_B9", "Link_B10", "Link_B11", "Link_B12", "Link_B13", "Link_B14", "Link_B15"],
+    ["Link_C1", "Link_C2", "Link_C3", "Link_C4", "Link_C5", "Link_C6", "Link_C7", "Link_C8", "Link_C9", "Link_C10", "Link_C11", "Link_C12", "Link_C13", "Link_C14", "Link_C15"],
+    ["Link_D1", "Link_D2", "Link_D3", "Link_D4", "Link_D5", "Link_D6", "Link_D7", "Link_D8", "Link_D9", "Link_D10", "Link_D11", "Link_D12", "Link_D13", "Link_D14", "Link_D15"],
+    ["Link_E1", "Link_E2", "Link_E3", "Link_E4", "Link_E5", "Link_E6", "Link_E7", "Link_E8", "Link_E9", "Link_E10", "Link_E11", "Link_E12", "Link_E13", "Link_E14", "Link_E15"]
+  ];
+
+  const optionContainers = document.querySelectorAll('.option');
+
+  optionsData.forEach((options, index) => {
+    const optionContainer = optionContainers[index];
+    options.forEach((option, subIndex) => {
+      const subOption = document.createElement('div');
+      subOption.classList.add('sub-option');
+      subOption.textContent = option;
+      subOption.addEventListener('click', () => {
+        window.location.href = `https://www.youtube.com/watch?v=${index}${subIndex}`;
+      });
+      optionContainer.appendChild(subOption);
+    });
+  });
+</script>
+</body>
+</html>
     </body>
 </html>
